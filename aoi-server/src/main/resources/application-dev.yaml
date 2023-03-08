@@ -1,0 +1,13 @@
+justauth:
+  enabled: true
+  type:
+    GITHUB:
+      client-id: d389c24ba56ec9c98e67
+      client-secret: a2a48c19e4c612fde5b5d71641ec46dc2c2a9ce5
+      redirect-uri: http://localhost/oauth/github
+    GOOGLE:
+      client-id: 1060416567368-gtftmemk4hlr56h3srrt442g86087e0q.apps.googleusercontent.com
+      client-secret: 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
+      redirect-uri: http://43.143.119.158/oauth/google
+  http-config:
+    timeout: 1000

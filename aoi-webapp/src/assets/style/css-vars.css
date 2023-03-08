@@ -1,0 +1,41 @@
+:root {
+    --c-primary: #366ef4;
+    --c-success: #008858;
+    --c-warning: #be5a00;
+    --c-danger: #d54941;
+    --c-info: #a6a6a6;
+    --c-strong: #303133;
+    --c-regular: #606266;
+    --c-secondary: #909399;
+    --c-disable: #C0C4CC;
+    --c-holder: #A8ABB2;
+    --c-screen: #f1f3f4;
+    --c-fill: #f9fafb;
+    --c-container: #FFFFFF;
+    --c-border: #DCDFE6;
+    --c-hover: #f1f1f1;
+    --c-selected: #dfdfdf99;
+    --c-header: rgba(255, 255, 255, 0.7);
+}
+
+html.dark {
+    --c-primary: #366ef4;
+    --c-success: #008858;
+    --c-warning: #be5a00;
+    --c-danger: #d54941;
+    --c-info: #a6a6a6;
+    --c-strong: #E5EAF3;
+    --c-regular: #CFD3DC;
+    --c-secondary: #A3A6AD;
+    --c-holder: #8D9095;
+    --c-disable: #bdb7b7;
+    --c-screen: #202124;
+    --c-fill: #3c4042;
+    --c-container: #35363a;
+    --c-border: #4C4D4F;
+    --c-hover: #646464;
+    --c-selected: #64646466;
+    --el-fill-color: #646464;
+    --el-fill-color-darker: #4f4f4f;
+    --c-header: rgba(36, 36, 36, 0.7)
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: HarmonyOS_Sans_SC_Medium;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff') format('woff');
+}
+
+* {
+    font-family: HarmonyOS_Sans_SC_Medium;
+}
+
+html {
+    scroll-padding: 54px 0 0 0;
+}
+
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    font-size: 2rem;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background: var(--c-screen);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    background: var(--c-info);
+}
+
+.medium-zoom-overlay {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+[data-aos] {
+    visibility: hidden;
+}
+
+[data-aos].animate__animated {
+    visibility: visible;
+}

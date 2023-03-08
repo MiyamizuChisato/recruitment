@@ -1,0 +1,60 @@
+aoi:
+  secret: ao1sakura
+spring:
+  profiles:
+    active: prod
+  datasource:
+    username: root
+    password: ao1sakura
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/recruitment
+  redis:
+    host: localhost
+    port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  mail:
+    host: smtp.163.com
+    default-encoding: UTF-8
+    protocol: smtp
+    username: miyamizuchisato@163.com
+    password: KXKBXFYQJZDSDVBM
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+          port: ${spring.mail.port}
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  file-storage:
+    default-platform: tencent-cos #默认使用的存储平台
+    tencent-cos: # 腾讯云 COS
+      - platform: tencent-cos # 存储平台标识
+        enable-storage: true  # 启用存储
+        secret-id: AKID8HI8pLrW1SmBLHU5RYUFnK0jJiuz155s
+        secret-key: eN1b4YyJSzQtdBVaR4ScnswseMI5KwRj
+        region: ap-nanjing #存仓库所在地域
+        bucket-name: recruitment-1302869254
+        domain: https://recruitment-1302869254.cos.ap-nanjing.myqcloud.com/ # 访问域名，注意“/”结尾
+        base-path: / # 基础路径
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+server:
+  servlet:
+    context-path: /aoi
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      logic-delete-field: deleted
